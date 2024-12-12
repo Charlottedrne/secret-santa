@@ -73,6 +73,7 @@ export default function App() {
                 Distribuer les cadeaux
               </button>
             </div>
+            bla
           </>
         )}
         // ASSIGNMENTS
