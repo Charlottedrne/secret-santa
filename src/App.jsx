@@ -51,6 +51,7 @@ export default function App() {
   };
 
   return (
+    <div className="bg-[#799F84] h-screen" style={{fontFamily:"'Pacifico','Poppins'" } }   >
     <div className="container mx-auto p-4">
       <div>
         
@@ -60,18 +61,22 @@ export default function App() {
         
         {currentScreen === "input" && (
           <>
-            <h2 className="text-2xl font-bold mb-6 text-center">
-              Ajoutez les participants
+            <h2 className="text-4xl mb-2 text-center mt-24 text-white">
+            T’invite qui ?
             </h2>
+            <p className="font-Poppins text-white text-xs text-center mb-5">Puisque t’aimes déjà personne, autant être rentable: mets celles qui ont de la thune, ça te consolera.</p>
+           
             <ParticipantInput
               onAddParticipant={addParticipant}
               participants={participants}
               onRemoveParticipant={removeParticipant}
             />
-            <div className="mt-6">
+             
+            <div className="mt-6 text-white text-xl flex">
               <button className="button w-full" onClick={distributeGifts}>
                 Distribuer les cadeaux
               </button>
+              <img src="./lutin2.png" alt="lutin2" className="w-28 lg:" />
             </div>
             
           </>
@@ -79,18 +84,21 @@ export default function App() {
         
         {currentScreen === "assignments" && (
           <>
-            <h2 className="text-2xl font-bold mb-6 text-center">
-              Attributions des cadeaux
+            <h2 className="text-4xl mb-3 text-center text-white mt-20">
+              Alors qui fait qui ?
             </h2>
+            <p className="font-Poppins text-white text-xs text-center mb-5">Alors, on recommence ? Pas de panique, si tu triches, personne ne le saura. Enfin presque.</p>
             <AssignmentDisplay assignments={assignments} />
             <div className="mt-6">
-              <button className="button w-full" onClick={resetApp}>
-                Recommencer
+              <button className="bg-[#BD2931] text-white text-xl  px-10 py-3 rounded-full mt-4 flex items-center mx-auto" onClick={resetApp}>
+                Tu veux recommencer ? 
               </button>
             </div>
+            <img src="./lutin1.png" className="w-60 mx-auto mt-8"></img>
           </>
         )}
       </div>
+    </div>
     </div>
   );
 }
