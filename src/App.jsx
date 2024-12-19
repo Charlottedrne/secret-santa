@@ -51,7 +51,7 @@ export default function App() {
   };
 
   return (
-    <div className="bg-[#799F84] h-screen" style={{fontFamily:"'Pacifico','Poppins'" } }   >
+    <div className="bg-[#799F84]  h-full " style={{fontFamily:"'Pacifico','Poppins'" } }   >
     <div className="container mx-auto p-4">
       <div>
         
@@ -61,7 +61,7 @@ export default function App() {
         
         {currentScreen === "input" && (
           <>
-            <h2 className="text-4xl mb-2 text-center mt-24 text-white">
+            <h2 className="text-4xl lg:text-1xl mb-2 text-center mt-24 text-white">
             T’invite qui ?
             </h2>
             <p className="font-Poppins text-white text-xs text-center mb-5">Puisque t’aimes déjà personne, autant être rentable: mets celles qui ont de la thune, ça te consolera.</p>

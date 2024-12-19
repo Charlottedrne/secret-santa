@@ -31,6 +31,8 @@ export function WelcomeScreen({ onStart }) {
   >
     Commencer
   </button>
+
+  <div className="absolute top-5 right-2 text-xs font-Poppins">A mettre en format <br></br> iphone 12 pro !</div>
 </div>
 
   );
